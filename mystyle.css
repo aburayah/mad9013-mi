@@ -1,0 +1,156 @@
+@font-face {
+	font-family: 'Lobster';
+	font-style: normal;
+	font-weight: 400;
+	src: url(fonts/lobster.woff2) format('woff2');
+}
+
+* {
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+}
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Arial, sans-serif;
+	font-size: 1.5rem;
+}
+
+header h1 {
+	font-family: 'lobster';
+	text-align: center;
+}
+
+img {
+	width: 100%;
+	height: auto;
+}
+
+nav ul {
+	list-style: none;
+	padding: 0;
+}
+
+nav ul li {
+	text-align: center;
+}
+
+nav ul li a {
+	border: 1px solid #CCC;
+	border-bottom: none;
+	display: block;
+	padding: 1rem 0;
+}
+
+
+/*	nav ul li:last-of-type a {
+	border-bottom: 1px solid #CCC;*/
+
+.footer {
+	background: grey;
+}
+
+@media all and (max-width: 60rem) and (min-width: 35rem) {
+	nav.mainnav {
+		clear: left;
+		padding: 0rem 2rem;
+		width: 100%;
+	}
+	nav ul li a {
+		border: 1px solid black;
+		padding: 5px;
+		text-decoration: none;
+		display: inline;
+		float: left;
+		margin: 0px 10px 0px 25px;
+	}
+	main {
+		width: 63%;
+		margin: 0;
+		float: left;
+		padding: 0px 0px 0px 0px;
+	}
+	.primary h2 ~ p {
+		padding: 25px 0px 0px 0px;
+		margin: 140px 0px 0px 20px;
+	}
+	.side {
+		width: 36%;
+		float: right;
+		padding: 0px;
+		margin: 0px;
+	}
+	.footer {
+		width: 100%;
+		clear: both;
+		position: relative;
+		z-index: 10;
+		height: 3em;
+		margin-top: -3em;
+	}
+}
+
+@media all and (min-width: 61rem) {
+	.content {
+		line-height: 25px;
+		-webkit-column-span: all;
+		column-span: all;
+		background-color: beige;
+		top: 25px;
+		float: left;
+		width: 48%;
+		height: auto;
+		-webkit-column-count: 2;
+		-moz-column-count: 2;
+		column-count: 2;
+	}
+	h1 {
+		margin: 2px;
+		padding: 0px;
+		margin-top: 0;
+		font-size: 3.157em;
+	}
+	h2 {
+		margin: 0px;
+		padding: 0px;
+		font-size: 1.369em;
+	}
+	h3 {
+		margin: 0px;
+		padding: 0px;
+		font-size: 1.777em;
+	}
+	small,
+	.font_small {
+		font-size: 0.75em;
+	}
+	nav ul {
+		float: left;
+		display: inline;
+		width: 25%;
+	}
+	nav ul li:last-of-type a {
+		margin: 0px auto;
+		padding: 0px;
+		border-bottom: 1px solid #CCC;
+	}
+	nav ul li a {
+		text-decoration: none;
+	}
+	.side {
+		line-height: 30px;
+		color: bisque;
+		width: 25%;
+		float: right;
+	}
+	.footer {
+		width: 100%;
+		clear: both;
+		position: relative;
+		z-index: 10;
+		height: 3em;
+		margin-top: -3em;
+	}
+}
